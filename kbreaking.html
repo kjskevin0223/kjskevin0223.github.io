@@ -1,0 +1,217 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<style>
+
+*{
+    box-sizing:border-box;
+    margin:0;
+    padding:0;
+}
+
+ul{
+    list-style-type:none;
+}
+
+body{
+    font-family:"맑은 고딕","돋움";
+    font-size:100%;
+    background-color:#f5f5f5;
+}
+
+[class *= 'c_']{
+    float:left;
+    padding:10px;
+}
+
+[class *= 'c_']{
+    width:100%;
+}
+
+@media only screen and (max-width:600px){
+.c_m_1 {width:8.33%;}
+.c_m_2 {width:16.66%;}
+.c_m_3 {width:25%;}
+.c_m_4 {width:33.33%;}
+.c_m_5 {width:41.66%;}
+.c_m_6 {width:50%;}
+.c_m_7 {width:58.33%;}
+.c_m_8 {width:66.66%;}
+.c_m_9 {width:75%;}
+.c_m_10 {width:83.33%;}
+.c_m_11 {width:91.66%;}
+.c_m_12 {width:100%;}
+}
+
+@media only screen and (min-width:768px){
+.c_1 {width:8.33%;}
+.c_2 {width:16.66%;}
+.c_3 {width:25%;}
+.c_4 {width:33.33%;}
+.c_5 {width:41.66%;}
+.c_6 {width:50%;}
+.c_7 {width:58.33%;}
+.c_8 {width:66.66%;}
+.c_9 {width:75%;}
+.c_10 {width:83.33%;}
+.c_11 {width:91.66%;}
+.c_12 {width:100%;}
+}
+
+header{
+    height:100px;
+    padding:20px;
+    background-color:#cc0000;
+    color:white;
+    text-align:center;
+}
+
+header h1{
+    text-shadow:3px 3px 5px #444444;
+}
+
+header a{
+    color:white;
+    text-decoration:none;
+}
+
+aside{
+    color:white;
+}
+
+aside li{
+    padding:12px;
+    margin:5px;
+    background-color:#222222;
+}
+
+aside a{
+    color:white;
+    text-decoration:none;
+    display:block;
+}
+
+aside li:hover{
+    background-color:#444444;
+}
+
+section#main{
+    padding:15px;
+    background-color:white;
+    border-radius:10px;
+}
+
+section#main h1{
+    color:#cc0000;
+    margin-bottom:15px;
+}
+
+section#main p{
+    padding:10px;
+    line-height:150%;
+}
+
+aside#photos{
+    color:black;
+}
+
+aside#photos img{
+    width:100%;
+    border:solid 2px #cccccc;
+}
+
+aside#photos video{
+    height:222px;
+    width:100%;
+    border:solid 2px #cccccc;
+}
+
+aside#photos li{
+    background-color:white;
+}
+
+footer{
+    height:60px;
+    padding:20px;
+    clear:both;
+    text-align:center;
+    background-color:#eeeeee;
+}
+
+.current {
+    color:#ff4444;
+}
+</style>
+
+<title>Breaking Dance</title>
+
+</head>
+
+<body>
+
+<header class="c_m_12 c_12">
+    <h1><a href="index.html">BREAKING DANCE</a></h1>
+    <p>역사와 기술, 그리고 한국 비보이 문화</p>
+</header>
+
+<aside class="c_m_3 c_3">
+
+    <ul>
+        <li><a href="history.html" >역사</a></li>
+        <li><a href="toprock.html">탑락</a></li>
+        <li><a href="footwork.html">풋워크</a></li>
+        <li><a href="powermove.html">파워무브</a></li>
+        <li><a href="kbreaking.html" class = 'current' >한국의 Breaking Dance</a></li>
+    </ul>
+
+</aside>
+
+<section id="main" class="c_m_9 c_6">
+
+    <h1>세계 정상급 한국 비보이</h1>
+
+    <p>
+    대한민국은 세계 브레이킹 강국으로 평가받고 있다.
+    </p>
+
+    <p>
+    대표적인 크루로
+    진조크루와 퓨전엠씨가 있으며,
+    다양한 국제 대회에서 우승을 차지하였다.
+    </p>
+
+    <p>
+    특히 퓨전엠씨는 30회 이상의 세계 대회 우승 경력을 보유하며
+    세계적인 브레이킹 크루로 인정받고 있다.
+    </p>
+
+    <p>
+    한국 비보이들은 세계 무대에서 꾸준히 활약하며
+    브레이킹 문화 발전에 기여하고 있다.
+    </p>
+
+</section>
+
+<aside id="photos" class="c_m_12 c_3">
+
+    <h4>Breaking Gallery</h4>
+
+    <ul>
+        <li>
+            <video  controls autoplay loop>
+                <source src = 'img/K_Breaking.mp4' type = "video/webm">
+            </video>
+        </li>
+    </ul>
+
+</aside>
+
+<footer class="c_m_12 c_12">
+    Copyright(C) 2025 Breaking Dance Web Project
+</footer>
+
+</body>
+</html>
