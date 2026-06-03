@@ -1,223 +1,194 @@
 <!DOCTYPE html>
-<html lang="ko">
+<html lang="en">
 <head>
-<meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>2026 Breaking Dance Web Project</title>
+    <style>
+        *{
+            box-sizing:border-box;
+        }
 
-<style>
+        .menu{
+            float:left;
+            width:20%;
+            text-align:center;
+        }
 
-*{
-    box-sizing:border-box;
-    margin:0;
-    padding:0;
-}
+        .menu a{
+            background-color:#000000;
+            padding:8px;
+            margin-top:7px;
+            display:block;
+            width:100%;
+            color:purple;
+        }
 
-ul{
-    list-style-type:none;
-}
+        .menu a:link {
+            text-decoration:none;
+            color:#ffffff;
+        }
 
-body{
-    font-family:"맑은 고딕","돋움";
-    font-size:100%;
-    background-color:#f5f5f5;
-}
+        .menu a:visited {
+            text-decoration:none;
+            color:#ffffff;
+        }
 
-[class *= 'c_']{
-    float:left;
-    padding:10px;
-}
+        .menu a:hover {
+            text-decoration:none;
+        }
 
-[class *= 'c_']{
-    width:100%;
-}
+        .menu a.current {
+            color:#cc0000;
+            font-weight:bold;
+        }
 
-@media only screen and (max-width:600px){
-.c_m_1 {width:8.33%;}
-.c_m_2 {width:16.66%;}
-.c_m_3 {width:25%;}
-.c_m_4 {width:33.33%;}
-.c_m_5 {width:41.66%;}
-.c_m_6 {width:50%;}
-.c_m_7 {width:58.33%;}
-.c_m_8 {width:66.66%;}
-.c_m_9 {width:75%;}
-.c_m_10 {width:83.33%;}
-.c_m_11 {width:91.66%;}
-.c_m_12 {width:100%;}
-}
+        .main {
+            float:left;
+            width:60%;
+            padding:0 20px;
+            color:#000000;
+        }
 
-@media only screen and (min-width:768px){
-.c_1 {width:8.33%;}
-.c_2 {width:16.66%;}
-.c_3 {width:25%;}
-.c_4 {width:33.33%;}
-.c_5 {width:41.66%;}
-.c_6 {width:50%;}
-.c_7 {width:58.33%;}
-.c_8 {width:66.66%;}
-.c_9 {width:75%;}
-.c_10 {width:83.33%;}
-.c_11 {width:91.66%;}
-.c_12 {width:100%;}
-}
+        .main h1{
+            color:#cc0000;
+        }
 
-header{
-    height:100px;
-    padding:20px;
-    background-color:#cc0000;
-    color:white;
-    text-align:center;
-}
+        .main p{
+            line-height:170%;
+            margin-bottom:10px;
+        }
 
-header h1{
-    text-shadow:3px 3px 5px #444444;
-}
+        .main p.explanation{
+            margin-top:3px;
+            padding:0 10px 10px 10px;
+            font-size:75%;
+            color:#666666;
+            font-style:italic;
+        }
 
-header a{
-    color:white;
-    text-decoration:none;
-}
+        .right {
+            background-color:#e5e5e5;
+            float:left;
+            width:20%;
+            padding:15px;
+            margin-top:7px;
+            color:#000000;
+            text-align:center;
+        }
 
-aside{
-    color:white;
-}
+        .right img{
+            display:block;
+            margin: 0 auto;
+            width: 100%;
+            border:solid 2px #cccccc;
+        }
 
-aside li{
-    padding:12px;
-    margin:5px;
-    background-color:#222222;
-}
+        .right video{
+            height:136px;
+            width:100%;
+            border:solid 2px #cccccc;
+        }
 
-aside a{
-    color:white;
-    text-decoration:none;
-    display:block;
-}
+        .right p {
+            margin:0 auto;
+            margin-bottom:20px;
+            font-size:75%;
+            color:#666666;
+            font-style:italic;
+            text-align:left;
+        }
 
-aside li:hover{
-    background-color:#444444;
-}
+        @media only screen and (max-width:620px) {
+            .menu, .main, .right {
+                width:100%;
+            }
+        }
 
-section#main{
-    padding:15px;
-    background-color:white;
-    border-radius:10px;
-}
-
-section#main h1{
-    color:#cc0000;
-    margin-bottom:15px;
-}
-
-section#main p{
-    padding:10px 10px 0 10px;
-    line-height:150%;
-}
-
-section#main p#explaination{
-    margin-top:3px;
-    padding:0 10px 10px 10px;
-    font-size:70%;
-}
-
-aside#photos{
-    color:black;
-}
-
-aside#photos img{
-    width:100%;
-    border:solid 2px #cccccc;
-}
-
-aside#photos li{
-    background-color:white;
-}
-
-footer{
-    height:60px;
-    padding:20px;
-    clear:both;
-    text-align:center;
-    background-color:#eeeeee;
-}
-
-.current {
-    color:#ff4444;
-}
-</style>
-
-<title>Breaking Dance</title>
-
+    </style>
 </head>
+<body style='font-family:Verdana; color:#ffffff; background-color:#f5f5f5;'>
+    <div style='background-color:#cc0000; padding:15px; text-align:center;'>
+        <h1> Breaking Dance </h1>
+        <p>역사와 기술, 그리고 한국 비보이 문화</p>
+    </div>
 
-<body>
+    <div style='overflow:auto'>
+        <div class = 'menu'>
+            <a href = 'index.html'>개요</a>
+            <a href = 'history.html' class = 'current'>역사</a>
+            <a href = 'toprock.html'>탑락</a>
+            <a href = 'footwork.html'>풋워크</a>
+            <a href = 'powermove.html'>파워무브</a>
+            <a href = 'kbreaking.html'>한국의 Breaking Dance</a>
+        </div>
 
-<header class="c_m_12 c_12">
-    <h1><a href="index.html">BREAKING DANCE</a></h1>
-    <p>역사와 기술, 그리고 한국 비보이 문화</p>
-</header>
 
-<aside class="c_m_3 c_3">
+    <div class='main'>
 
-    <ul>
-        <li><a href="history.html" class = 'current'>역사</a></li>
-        <li><a href="toprock.html">탑락</a></li>
-        <li><a href="footwork.html">풋워크</a></li>
-        <li><a href="powermove.html">파워무브</a></li>
-        <li><a href="kbreaking.html">한국의 Breaking Dance</a></li>
-    </ul>
+        <h1>브레이킹의 역사</h1>
 
-</aside>
+        <p>
+        브레이킹은 힙합의 한 장르로,
+        1970년대 미국 뉴욕 브롱크스(Bronx) 지역의 빈민가에서 시작되었다.
+        </p>
 
-<section id="main" class="c_m_9 c_6">
+        <p>
+        당시 브롱크스는 범죄와 빈곤이 만연한 지역이었으며,
+        많은 청소년들은 음악과 춤을 통해 자신들의 삶을 표현하고자 하였다.
+        </p>
 
-    <h1>브레이킹의 역사</h1>
+        <p>
+        이 힘든 현실을 극복하고자 여러 그룹들이 평화와 화합을 외쳤고,
+        이를 바탕으로 힙합 문화가 탄생하게 되었다.
+        </p>
 
-    <p>
-    브레이킹은 힙합의 한 장르로, 1970년대 미국 뉴욕 브롱크스(Bronx) 지역, 굶주리고 생존을 위해 다퉈야 했던 빈민가에서 시작되었다.
-    </p>
+        <p>
+        힙합의 창시자로 알려진 DJ Kool Herc는
+        브레이크 비트를 반복 재생하였고,
+        사람들은 그 구간에 맞춰 춤을 추기 시작하였다.
+        </p>
 
-    <P>이 힘든 생활을 타파하고자 여러 그룹들이 모여 평화를 외치며 힙합이라는 장르가 탄생하게 되었다.</P>
+        <p class='explanation'>
+        * 브레이크 비트(Break Beat) :
+        두 개의 턴테이블을 사용하여 노래의 간주 부분을 반복 재생하는 기법
+        </p>
 
-    <p>
-    힙합의 창시자 DJ Kool Herc가 브레이크 비트*를 반복 재생하면서
-    사람들이 그 구간에 맞춰 춤을 추기 시작한 것이 브레이킹의 시작이다.
-    </p>
+        <p>
+        이 과정에서 최초의 비보이(B-Boy)들이 등장하였으며,
+        브레이킹이라는 새로운 춤 문화가 탄생하게 되었다.
+        </p>
 
-    <P id = 'explaination'>
-        *브레이크 비트 : 두 개의 턴테이블을 준비해 노래의 간주 부분만을 연결해 트는 것에서 그 간주 부분의 연결 부분에 쓰이는 비트
-    </P>
+        <p>
+        대표적인 1세대 비보이 크루는 다음과 같다.
+        </p>
 
-    <p>
-        브롱크스에서 1세대 비보이들이 탄생했다.
-    </p>
-    <p id = 'explaination'>
-        ZULU KINGS, CRAZY COMMANDOS, THE BRONX BOYS, STAR CHILD LA ROCK, SAL SOUL BROTHER, ROCK STEADY CREW, FLOOR MASTERS, 7DEADLY SINS, ROCK CITY CREW, YOUNG CITY BOYS
-    </p>
-    <p>
-    이후 세계적인 문화로 성장하였으며,
-    2024 파리 올림픽 정식 종목으로 채택되었다.
-    </p>
-    <!-- blank -->
-    <p>
-        
-    </p>
-</section>
+        <p class='explanation'>
+        Zulu Kings, Crazy Commandos, The Bronx Boys,
+        Star Child La Rock, Sal Soul Brother,
+        Rock Steady Crew, Floor Masters,
+        7 Deadly Sins, Rock City Crew,
+        Young City Boys
+        </p>
 
-<aside id="photos" class="c_m_12 c_3">
+        <p>
+        이후 브레이킹은 미국을 넘어 전 세계로 확산되었으며,
+        2024 파리 올림픽 정식 종목으로 채택될 만큼
+        영향력 있는 문화이자 스포츠로 성장하였다.
+        </p>
 
-    <h4>Breaking Gallery</h4>
+    </div>
 
-    <ul>
-        <li><img src="img/bronx.jpg"></li>
-        <li><img src="img/paris_olympic_b_boy.jpg"></li>
-    </ul>
+        <div class = 'right'>
+            <h2>Breaking Gallery</h2>
+            <img src="img/bronx.jpg">
+            <p>*1970년대 Bronx</p>
+            <img src="img/paris_olympic_b_boy.jpg">
+            <p>*2024 파리 올림픽</p>
+        </div>
+    </div>
 
-</aside>
-
-<footer class="c_m_12 c_12">
-    Copyright(C) 2026 Breaking Dance Web Project
-</footer>
-
+    <div style = 'background-color:#eeeeee; color:#000000; text-align:center; padding:10px; 
+    margin-top:7px;'>copyright(c) 2026 Breaking Dance Web Project</div>
 </body>
 </html>
