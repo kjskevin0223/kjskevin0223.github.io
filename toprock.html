@@ -1,215 +1,152 @@
 <!DOCTYPE html>
-<html lang="ko">
+<html lang="en">
 <head>
-<meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>2026 Breaking Dance Web Project</title>
+    <style>
+        *{
+            box-sizing:border-box;
+        }
 
-<style>
+        .menu{
+            float:left;
+            width:20%;
+            text-align:center;
+        }
 
-*{
-    box-sizing:border-box;
-    margin:0;
-    padding:0;
-}
+        .menu a{
+            background-color:#000000;
+            padding:8px;
+            margin-top:7px;
+            display:block;
+            width:100%;
+            color:purple;
+        }
 
-ul{
-    list-style-type:none;
-}
+        .menu a:link {
+            text-decoration:none;
+            color:#ffffff;
+        }
 
-body{
-    font-family:"맑은 고딕","돋움";
-    font-size:100%;
-    background-color:#f5f5f5;
-}
+        .menu a:visited {
+            text-decoration:none;
+            color:#ffffff;
+        }
 
-[class *= 'c_']{
-    float:left;
-    padding:10px;
-}
+        .menu a:hover {
+            text-decoration:none;
+        }
 
-[class *= 'c_']{
-    width:100%;
-}
+        .menu a.current {
+            color:#cc0000;
+            font-weight:bold;
+        }
 
-@media only screen and (max-width:600px){
-.c_m_1 {width:8.33%;}
-.c_m_2 {width:16.66%;}
-.c_m_3 {width:25%;}
-.c_m_4 {width:33.33%;}
-.c_m_5 {width:41.66%;}
-.c_m_6 {width:50%;}
-.c_m_7 {width:58.33%;}
-.c_m_8 {width:66.66%;}
-.c_m_9 {width:75%;}
-.c_m_10 {width:83.33%;}
-.c_m_11 {width:91.66%;}
-.c_m_12 {width:100%;}
-}
+        .main {
+            float:left;
+            width:60%;
+            padding:0 20px;
+            color:#000000;
+        }
 
-@media only screen and (min-width:768px){
-.c_1 {width:8.33%;}
-.c_2 {width:16.66%;}
-.c_3 {width:25%;}
-.c_4 {width:33.33%;}
-.c_5 {width:41.66%;}
-.c_6 {width:50%;}
-.c_7 {width:58.33%;}
-.c_8 {width:66.66%;}
-.c_9 {width:75%;}
-.c_10 {width:83.33%;}
-.c_11 {width:91.66%;}
-.c_12 {width:100%;}
-}
+        .main h1{
+            color:#cc0000;
+        }
 
-header{
-    height:100px;
-    padding:20px;
-    background-color:#cc0000;
-    color:white;
-    text-align:center;
-}
+        .right {
+            background-color:#e5e5e5;
+            float:left;
+            width:20%;
+            padding:15px;
+            margin-top:7px;
+            color:#000000;
+            text-align:center;
+        }
 
-header h1{
-    text-shadow:3px 3px 5px #444444;
-}
+        .right img{
+            display:block;
+            margin: 0 auto;
+            height:200px;
+            width:50%;
+            border:solid 2px #cccccc;
+        }
 
-header a{
-    color:white;
-    text-decoration:none;
-}
+        .right video{
+            height:252px;
+            width:60%;
+            border:solid 2px #cccccc;
+        }
 
-aside{
-    color:white;
-}
+        .right p {
+            margin:0 auto;
+            margin-bottom:20px;
+            font-size:75%;
+            color:#666666;
+            font-style:italic;
+            text-align:left;
+        }
 
-aside li{
-    padding:12px;
-    margin:5px;
-    background-color:#222222;
-}
+        @media only screen and (max-width:620px) {
+            .menu, .main, .right {
+                width:100%;
+            }
+        }
 
-aside a{
-    color:white;
-    text-decoration:none;
-    display:block;
-}
-
-aside li:hover{
-    background-color:#444444;
-}
-
-section#main{
-    padding:15px;
-    background-color:white;
-    border-radius:10px;
-}
-
-section#main h1{
-    color:#cc0000;
-    margin-bottom:15px;
-}
-
-section#main p{
-    padding:10px;
-    line-height:150%;
-}
-
-aside#photos{
-    color:black;
-}
-
-aside#photos img{
-    width:100%;
-    border:solid 2px #cccccc;
-}
-
-aside#photos video{
-    height:222px;
-    width:100%;
-    border:solid 2px #cccccc;
-}
-
-aside#photos li{
-    background-color:white;
-}
-
-footer{
-    height:60px;
-    padding:20px;
-    clear:both;
-    text-align:center;
-    background-color:#eeeeee;
-}
-
-.current {
-    color:#ff4444;
-}
-</style>
-
-<title>Breaking Dance</title>
-
+    </style>
 </head>
+<body style='font-family:Verdana; color:#ffffff; background-color:#f5f5f5;'>
+    <div style='background-color:#cc0000; padding:15px; text-align:center;'>
+        <h1> Breaking Dance </h1>
+        <p>역사와 기술, 그리고 한국 비보이 문화</p>
+    </div>
 
-<body>
+    <div style='overflow:auto'>
+        <div class = 'menu'>
+            <a href = 'index.html'>개요</a>
+            <a href = 'history.html'>역사</a>
+            <a href = 'toprock.html' class = 'current'>탑락</a>
+            <a href = 'footwork.html'>풋워크</a>
+            <a href = 'powermove.html'>파워무브</a>
+            <a href = 'kbreaking.html'>한국의 Breaking Dance</a>
+        </div>
 
-<header class="c_m_12 c_12">
-    <h1><a href = 'index.html'>BREAKING DANCE</a></h1>
-    <p>역사와 기술, 그리고 한국 비보이 문화</p>
-</header>
 
-<aside class="c_m_3 c_3">
+        <div class = 'main'>
+            <h1>탑락 (Toprock)</h1>
 
-    <ul>
-        <li><a href="history.html">역사</a></li>
-        <li><a href="toprock.html" class = 'current'>탑락</a></li>
-        <li><a href="footwork.html">풋워크</a></li>
-        <li><a href="powermove.html">파워무브</a></li>
-        <li><a href="kbreaking.html">한국의 Breaking Dance</a></li>
-    </ul>
+            <p>
+            <b>"가장 기본적이지만 응용이 다양하여 개성이 드러나는 브레이킹 기술"</b>
+            </p>
 
-</aside>
+            <p>
+            탑락은 이름 그대로 서서 추는 브레이킹 기술이다.
+            브레이킹의 시작을 알리는 동작으로 사용되며,
+            댄서의 리듬감과 스타일을 가장 잘 보여주는 요소 중 하나이다.
+            </p>
 
-<section id="main" class="c_m_9 c_6">
+            <p>
+            브레이킹에서 음악의 비트를 표현하는 것은 매우 중요한데,
+            탑락은 다양한 변형이 가능하여 자신의 개성을 드러내기에 적합하다.
+            </p>
 
-    <h1>탑락이란?</h1>
+            <p>
+            또한 탑락은 풋워크나 파워무브로 이어지는 연결 역할도 수행한다.
+            대표적인 동작으로는 인디언 스텝, 사이드 스텝,
+            셔플 스텝, 브롱크스 스텝, 업락 등이 있다.
+            </p>
 
-    <p>
-    탑락은 서서 수행하는 브레이킹의 기본 동작이다.
-    </p>
+        </div>
 
-    <p>
-    배틀을 시작할 때 자주 사용되며,
-    리듬감과 개성을 표현하는 중요한 요소이다.
-    </p>
-
-    <p>
-    같은 동작이라도 댄서마다 스타일이 다르기 때문에
-    자신만의 개성을 보여주는 기술로 여겨진다.
-    </p>
-
-    <p>
-        대표 스텝으로는 인디언 스텝, 사이드 스텝, 셔플 스텝, 브롱크스 스텝 등이 있다
-    </p>
-
-</section>
-
-<aside id="photos" class="c_m_12 c_3">
-
-    <h4>Breaking Gallery</h4>
-
-    <ul>
-        <li>
+        <div class = 'right'>
+            <h2>Breaking Gallery</h2>
             <video  controls autoplay loop>
                 <source src = 'img/toplock.mp4' type = "video/webm">
             </video>
-        </li>
-    </ul>
+        </div>
+    </div>
 
-</aside>
-
-<footer class="c_m_12 c_12">
-    Copyright(C) 2026 Breaking Dance Web Project
-</footer>
-
+    <div style = 'background-color:#eeeeee; color:#000000; text-align:center; padding:10px; 
+    margin-top:7px;'>copyright(c) 2026 Breaking Dance Web Project</div>
 </body>
 </html>
